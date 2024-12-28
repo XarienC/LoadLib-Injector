@@ -1,0 +1,45 @@
+﻿<ui:FluentWindow x:Class="Injector.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:local="clr-namespace:Injector"
+                 mc:Ignorable="d"
+                 Title="LoadLibrary Injector"
+                 ResizeMode="NoResize"
+                 Height="563" 
+                 Width="641"
+                 Background="{ui:ThemeResource ApplicationBackgroundBrush}"
+                 ExtendsContentIntoTitleBar="True"
+                 WindowBackdropType="Mica"
+                 WindowCornerPreference="Round"
+                 WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ui:TitleBar Title="LoadLibrary Injector" CanMaximize="False"/>
+        <Label Name="SelectProcLabel" Content="Select Process" HorizontalAlignment="Left" Margin="46,62,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="ProcList" Margin="46,90,180,0" VerticalAlignment="Top" SelectionChanged="ProcList_SelectionChanged"/>
+        <Button Name="RefreshListButton" Content="Refresh" Margin="472,93,0,0" VerticalAlignment="Top" Width="124" Click="RefreshListButton_Click"/>
+
+        <Label x:Name="SelectDLLLabel" Content="Select DLL" HorizontalAlignment="Left" Margin="46,136,0,0" VerticalAlignment="Top"/>
+        <ui:TextBox Name="DLLPathTB" Margin="46,164,180,0" TextWrapping="Wrap" PlaceholderText="..." IsReadOnly="True" VerticalAlignment="Top"/>
+        <Button x:Name="SelectDLLButton" Content="..." Margin="472,168,0,0" VerticalAlignment="Top" Width="124" Click="SelectDLLButton_Click"/>
+        <Button x:Name="InjectButton" Content="Inject" Margin="472,232,0,0" VerticalAlignment="Top" Width="124" Click="InjectButton_Click"/>
+        <Label x:Name="ProcDetailsLabel" Content="Process Details" HorizontalAlignment="Left" Margin="46,274,0,0" VerticalAlignment="Top"/>
+        <ui:RichTextBox Name="ProcDetailsTB" Margin="46,302,358,25" IsReadOnly="True" FontSize="12">
+            <FlowDocument FontFamily="Consolas" FontSize="12">
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </ui:RichTextBox>
+        <Label x:Name="DLLDetailsLabel" Content="DLL Details" HorizontalAlignment="Left" Margin="301,274,0,0" VerticalAlignment="Top"/>
+        <ui:RichTextBox x:Name="DLLDetailsTB" Margin="301,302,45,25" IsReadOnly="True" FontSize="12">
+            <FlowDocument FontFamily="Consolas" FontSize="12">
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </ui:RichTextBox>
+    </Grid>
+</ui:FluentWindow>

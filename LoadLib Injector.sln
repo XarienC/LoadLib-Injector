@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadLib Injector", "LoadLib Injector.csproj", "{FC45A34D-4B04-4A55-A77D-44280FC87CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC45A34D-4B04-4A55-A77D-44280FC87CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC45A34D-4B04-4A55-A77D-44280FC87CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC45A34D-4B04-4A55-A77D-44280FC87CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC45A34D-4B04-4A55-A77D-44280FC87CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08184779-595A-4C23-8347-E9849E846FEC}
+	EndGlobalSection
+EndGlobal
